@@ -1,0 +1,40 @@
+#+AUTHOR: Nyk Ma <i@nyk.ma>
+* Functions
+  :PROPERTIES:
+  :ID:       ec63ac6c-8a41-4188-84fd-9b1a1cbbc72c
+  :END:
+
+Not-heavy-enough-to-become-a-project-but-kinda-useful functions.
+Designed for OpenFAAS.
+
+* [0/2] TODOs
+  :PROPERTIES:
+  :ID:       6e2a8867-ff1f-4f75-88a3-07937c7b54e3
+  :END:
+** TODO Twitter tweet fetcher and cleaner
+   :PROPERTIES:
+   :ID:       61eba0ed-37ed-46ce-a13c-05b8282dbf52
+   :END:
+
+   Cron-triggered.
+
+** TODO Image placeholder creator
+   :PROPERTIES:
+   :ID:       c5417409-6f48-4b28-abd0-72dd04777d0d
+   :END:
+
+   A placeholder generator inspired from [[https://github.com/Evlos/placeholder][Evlos/placeholder]].
+*** Supported style
+    :PROPERTIES:
+    :ID:       f835d9e7-14c2-4115-b6bb-bdc83f487725
+    :END:
+    - Border
+    - Cross
+
+*** Supported formats
+    :PROPERTIES:
+    :ID:       cfa4bddb-2d37-465a-9072-07405ffd4f4f
+    :END:
+    - SVG
+    - PNG
+    - GIF
