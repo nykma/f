@@ -1,22 +1,39 @@
 #+AUTHOR: Nyk Ma <i@nyk.ma>
-* Functions
-  :PROPERTIES:
-  :ID:       ec63ac6c-8a41-4188-84fd-9b1a1cbbc72c
-  :END:
 
 Not-heavy-enough-to-become-a-project-but-kinda-useful functions.
 Designed for OpenFAAS.
 
-* [0/2] TODOs
+* Usage
+  :PROPERTIES:
+  :ID:       04ac33e6-b409-4242-9c53-fef69d67addb
+  :END:
+
+  Log in to your OpenFaaS server and private docker registry, then
+
+  #+begin_src sh
+  make prepare
+  #+end_src
+
+  Edit stack.yml to let image tag matches your docker registry.
+
+  Set faas gateway in $OPENFAAS_URL env.
+
+  #+begin_src sh
+  make push
+  #+end_src
+
+* [0/2] Functions
   :PROPERTIES:
   :ID:       6e2a8867-ff1f-4f75-88a3-07937c7b54e3
   :END:
-** TODO Twitter tweet fetcher and cleaner
+** TODO [0/3] Twitter tweet fetcher and cleaner
    :PROPERTIES:
    :ID:       61eba0ed-37ed-46ce-a13c-05b8282dbf52
    :END:
 
-   Cron-triggered.
+   - [ ] Template: Elixir with ecto/postgres dependency
+   - [ ] Cron-triggered
+   - [ ] Stat page?
 
 ** TODO Image placeholder creator
    :PROPERTIES:
@@ -24,17 +41,18 @@ Designed for OpenFAAS.
    :END:
 
    A placeholder generator inspired from [[https://github.com/Evlos/placeholder][Evlos/placeholder]].
-*** Supported style
+
+*** [0/2] Supported style
     :PROPERTIES:
     :ID:       f835d9e7-14c2-4115-b6bb-bdc83f487725
     :END:
-    - Border
-    - Cross
+    - [ ] Border
+    - [ ] Cross
 
-*** Supported formats
+*** [0/3] Supported formats
     :PROPERTIES:
     :ID:       cfa4bddb-2d37-465a-9072-07405ffd4f4f
     :END:
-    - SVG
-    - PNG
-    - GIF
+    - [ ] SVG
+    - [ ] PNG
+    - [ ] GIF

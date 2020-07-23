@@ -1,0 +1,9 @@
+# WARNING: Edit image tag first!
+version: 1.0
+provider:
+  name: openfaas
+functions:
+  ping:
+    lang: elixir
+    handler: ./ping
+    image: my.registry.io/functions/ping:latest
